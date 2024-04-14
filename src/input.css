@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {scroll-behavior: smooth;}
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+body::-webkit-scrollbar-thumb {
+    background:linear-gradient(8deg, rgb(9, 172, 187) 0%, rgb(0, 92, 230) 41%, rgb(9, 172, 187) 100%);
+    border-radius: 10px;
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/* Nav-js home page*/
+.show-menu-nav {
+    display: block;
+}
+
+
+/* All design about navigationBar css adding Javascript Dashboard*/
+.show-nav {
+    position: absolute;
+    top: 0;
+    z-index: 50;
+    display: block;
+    width: 100%;
+    background-color: black;
+    z-index: 100;
+    color: white;
+    transition: 1s;
+}
+
+/* All info about profile */
+.more-p-info {
+    width: 100%;
+    position: absolute;
+    display: block;
+    background-color: violet;
+    transition: 1s;
+}
+
+/* Design form about Patient and Doctor */
+.form-control.error input{
+    border-color: crimson;
+}
+.form-control.succes input{
+    border-color:  rgb(8, 138, 8);
+}
+.form-control.error small{
+    visibility: visible;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/thinline.css">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>Login Patient</title>
+</head>
+<body>
+
+    <main id="bg-patient" class="relative lg:space-y-0 md:space-y-[50px] space-y-0 w-full flex flex-col justify-center items-center h-screen">
+
+        <div class="lg:w-[35%] md:w-[80%] w-full">
+            <img src="../doctor/heartBeating_prev_ui.png" class="w-[30%] lg:ml-0 md:ml-0 ml-2">
+            <h1 class="text-blue-400 ml-[20px] mt-[25px]">PATIENT</h1>
+        </div>
+        <form id="form" action="#" method="#" class="relative md:px-[20px] lg:px-[20px] px-[20px] lg:w-[35%] md:w-[80%] w-full">
+            
+            <!-- Champs input -->
+            <div class="form-control succes flex flex-col mt-[20px]">
+                <input type="email" id="email" placeholder="Enter your mail" class="border outline-none py-[7px] rounded-full px-[20px] border-blue-500">
+                <small class="email-error text-red-500"></small>
+                
+            </div>
+
+            <div class="form-control error flex flex-col mt-[20px]">
+                <input type="password" id="password" placeholder="Password" class="border outline-none py-[7px] rounded-full px-[20px] border-blue-500">
+                <small class="pswd-error text-red-500"></small>
+            </div>
+            
+            <button type="submit" id="send-form-p" class="w-full outline-none mt-[30px] hover:border hover:border-blue-500 hover:bg-white hover:text-blue-500 hover:transition-[2s] bg-blue-400 rounded-full  py-[7px] text-white">Login</button>
+            
+        </form>
+
+        <div class="flex flex-col justify-center items-center">
+            <a href="#" class="mt-[25px] active:text-blue-400 focus:text-blue-400 transition">Forgot Password</a>
+            <span class="mt-[25px] after:bg-blue-400 after:absolute after:w-[100px] after:h-[1px] after:mt-[10px] after:ml-[10px] before:bg-blue-400 before:absolute before:w-[100px] before:h-[1px] before:mt-[10px] before:ml-[-110px]">Or</span>
+
+            <!-- Sing in with other count link -->
+            <div class="mt-[25px]"><a href="#">&copy; Sign in with</a></div>
+        </div>
+    </main>
+
+    <script src="../src/logpatient.js"></script>
+</body>
+</html>
